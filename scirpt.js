@@ -65,3 +65,39 @@ console.log(veggies);
 let deleteItem = veggies.pop();
 console.log(veggies);
 console.log(deleteItem);
+// ============================================ Functions
+
+// Qs: Create a function using the "function" keyword that takes a string as a argument & returns the number of vowels in the string.
+
+// Ans:
+
+function countVowel (str){
+    let count =0;
+    for(let char of str){
+        if(char==='a'||char==='e'||char==='i'||char==='o'||char==='u'){
+            count++
+        }
+    }
+    console.log(count);
+}
+countVowel('rajibul');
+// Qs: Create an arrow function to perform the some task.
+
+// Ans:
+let Vowel=(str)=>{
+    let count = 0;
+    for (let char of str) {
+      if (
+        char === "a" ||
+        char === "e" ||
+        char === "i" ||
+        char === "o" ||
+        char === "u"
+      ) {
+        count++;
+      }
+    }
+    console.log(count);
+}
+Vowel('rajibul islam');
+// ===========================================
